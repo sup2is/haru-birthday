@@ -361,19 +361,19 @@ function initGuestbook() {
 
 // ========== Map Navigation ==========
 function openNaverMap() {
-  window.location.href = 'nmap://search?query=부천 부일로 223 연그리다&appname=yootaejeon.github.io/Ah-in_birthday';
+  window.location.href = 'nmap://search?query=판교 메리어트 호텔&appname=sup2is.github.io/haru-birthday';
 }
 
 function openKakaoMap() {
-  window.location.href = 'kakaomap://search?q=부천 부일로 223 연그리다';
+  window.location.href = 'kakaomap://search?q=판교 메리어트 호텔';
 }
 
 function openTmap() {
-  window.location.href = 'tmap://search?name=부천 부일로 223 연그리다';
+  window.location.href = 'tmap://search?name=판교 메리어트 호텔';
 }
 
 function openKakaoTaxi() {
-  window.location.href = 'https://t.kakao.com/launch?type=taxi&dest_lat=37.4888739&dest_lng=126.7552879&ref=localweb';
+  window.location.href = 'https://t.kakao.com/launch?type=taxi&dest_lat=37.3952&dest_lng=127.1099&ref=localweb';
 }
 
 // ========== Scroll Animation ==========
@@ -402,18 +402,18 @@ function initKakaoMap() {
     if (!container) return;
 
     var options = {
-      center: new kakao.maps.LatLng(37.4888739, 126.7552879),
+      center: new kakao.maps.LatLng(37.3952, 127.1099),
       level: 3
     };
 
     var map = new kakao.maps.Map(container, options);
 
-    var markerPosition = new kakao.maps.LatLng(37.4888739, 126.7552879);
+    var markerPosition = new kakao.maps.LatLng(37.3952, 127.1099);
     var marker = new kakao.maps.Marker({ position: markerPosition });
     marker.setMap(map);
 
     var infowindow = new kakao.maps.InfoWindow({
-      content: '<div style="padding:5px;font-size:12px;font-family:Cafe24Oneprettynight,cursive;text-align:center;">연 그리다</div>'
+      content: '<div style="padding:5px;font-size:12px;font-family:Cafe24Oneprettynight,cursive;text-align:center;">판교 메리어트 호텔</div>'
     });
     infowindow.open(map, marker);
   });
@@ -424,7 +424,7 @@ function updateDday() {
   var el = document.getElementById('dday-counter');
   if (!el) return;
 
-  var birthday = new Date('2026-02-15T12:00:00+09:00');
+  var birthday = new Date('2025-10-25T12:00:00+09:00');
   var today = new Date();
   today.setHours(0, 0, 0, 0);
   birthday.setHours(0, 0, 0, 0);
@@ -432,11 +432,11 @@ function updateDday() {
   var diff = Math.ceil((birthday - today) / (1000 * 60 * 60 * 24));
 
   if (diff > 0) {
-    el.innerHTML = '아인이의 첫돌까지 <span class="dday-num">' + diff + '</span>일';
+    el.innerHTML = '하루의 첫돌까지 <span class="dday-num">' + diff + '</span>일';
   } else if (diff === 0) {
-    el.innerHTML = '오늘은 아인이의 <span class="dday-num">첫돌</span>입니다!';
+    el.innerHTML = '오늘은 하루의 <span class="dday-num">첫돌</span>입니다!';
   } else {
-    el.innerHTML = '아인이의 첫돌 <span class="dday-num">+' + Math.abs(diff) + '</span>일';
+    el.innerHTML = '하루의 첫돌 <span class="dday-num">+' + Math.abs(diff) + '</span>일';
   }
 }
 
@@ -484,14 +484,14 @@ function toggleMusic() {
 // ========== Lightbox ==========
 var lightboxIndex = 0;
 var lightboxImages = [
-  './gallery/ah-in 1.jpg',
-  './gallery/ah-in 2.jpg',
-  './gallery/ah-in 3.jpg',
-  './gallery/ah-in 4.jpg',
-  './gallery/ah-in 5.jpg',
-  './gallery/ah-in 6.jpg',
-  './gallery/ah-in 7.jpg',
-  './gallery/ah-in 8.jpg'
+  './gallery/haru 1.jpg',
+  './gallery/haru 2.jpg',
+  './gallery/haru 3.jpg',
+  './gallery/haru 4.jpg',
+  './gallery/haru 5.jpg',
+  './gallery/haru 6.jpg',
+  './gallery/haru 7.jpg',
+  './gallery/haru 8.jpg'
 ];
 
 function openLightbox(index) {
