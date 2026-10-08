@@ -537,12 +537,9 @@ function initLightbox() {
 
 // ========== Initialize ==========
 document.addEventListener('DOMContentLoaded', function() {
-  createFlowerLeaves();
   initGallery();
   initScrollAnimation();
   initKakaoMap();
-  updateDday();
-  initMusic();
   initLightbox();
   initGuestbook();
 });
