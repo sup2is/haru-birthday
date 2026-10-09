@@ -34,7 +34,7 @@ var gallery = {
   slides: null,
   track: null,
   slideWidth: 166, // 150px + 16px margin
-  totalImages: 8
+  totalImages: 12
 };
 
 function initGallery() {
@@ -424,7 +424,7 @@ function updateDday() {
   var el = document.getElementById('dday-counter');
   if (!el) return;
 
-  var birthday = new Date('2025-10-25T12:00:00+09:00');
+  var birthday = new Date('2026-10-24T12:00:00+09:00');
   var today = new Date();
   today.setHours(0, 0, 0, 0);
   birthday.setHours(0, 0, 0, 0);
@@ -491,7 +491,11 @@ var lightboxImages = [
   './gallery/haru 5.jpg',
   './gallery/haru 6.jpg',
   './gallery/haru 7.jpg',
-  './gallery/haru 8.jpg'
+  './gallery/haru 8.jpg',
+  './gallery/haru 9.jpg',
+  './gallery/haru 10.jpg',
+  './gallery/haru 11.jpg',
+  './gallery/haru 12.jpg'
 ];
 
 function openLightbox(index) {
